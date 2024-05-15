@@ -90,7 +90,7 @@
         </div>
     </nav>
     <div class="container">
-        <span id="loggedInUser" class="text-black"></span> <span> 's Cart</span>
+        <span id="loggedInUser" class="text-black"></span>
         
         <div id="cart-items" class="list-group"></div>
         <h3>Total: ₱<span id="total">0.00</span></h3>
@@ -142,7 +142,7 @@
     // Retrieve the username from localStorage
     var user = localStorage.getItem("user");
   if (user) {
-  document.getElementById("loggedInUser").innerText = user ;
+  document.getElementById("loggedInUser").innerText = user + "'s Cart";
   document.getElementById("logoutButton").style.display = "block";
   
   var signUpLink = document.querySelector('a[href="./pages/Sign-up.html"]');
